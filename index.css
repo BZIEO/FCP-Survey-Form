@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  width: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.8),
+      rgba(154, 186, 255, 0.7)
+    ),
+    url(https://cdn.pixabay.com/photo/2021/08/08/15/01/trading-6531134_1280.jpg);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.form-section {
+  /* background-color: red; */
+  margin: 0 auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#survey-form {
+  background-color: #ffe8cc81;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.more-of,
+.recommend {
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

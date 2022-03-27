@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+      <!-- Title and short description -->
+      <div class="form-section">
+        
+        <div class="header">
+          <h1 id="title">Cryptocurrency Investing survey</h1>
+          <p id="description">
+            <em>
+
+              Thank you for taking the time to fill out this survey
+            </em>
+          </p>
+        </div>
+        <!-- Form begins -->
+        <div class="survey-form">
+          <form action="" id="survey-form">
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name..."
+            required 
+            /><br />
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input
+            id="email"
+            type="email"
+            placeholder="Enter your email.."
+            required 
+            /><br />
+            <!-- Age -->
+            <label for="age">Age (Optional)</label>
+            <input type="number" min="5" max="99" id="number"  /><br />
+            <!-- Current role -->
+            <label for="current-role">
+              Which option best describes your current role?</label>
+              <select name="role"  >
+                <option value="" selected disabled>Select your current role</option>
+                <option value="Full time">Full Time job</option>
+                <option value="Part time">Part time job</option>
+                <option value="Student">Student</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+              </select><br>
+              
+              <!-- Recommend -->
+              <div class="recommend">
+                
+                <label for="recommend" id="dropdown"></label>
+                Would you recommend cryptocurrency investing to a friend?</label><br>
+                <input type="radio" id= "definitely" name="recommend" value="definitely">
+                <label for="definitely">Definitely</label><br>
+                <input type="radio" id= "Maybe" name="recommend" value="Maybe">
+                <label for="Maybe">Maybe</label><br>
+                <input type="radio" id= "Not sure" name="recommend" value="Not sure">
+                <label for="Not sure">Not sure</label><br>
+              </div>
+              <!-- Favorite cryptocurrency -->
+              <label for="Favorite-cryptocurrency">What is your Favorite cryptocurrency?</label>
+              <select name="fav">
+                <option value="" selected disabled>Select an option</option>
+                <option value="Bitcoin">Bitcoin</option>
+                <option value="Ethereum">Ethereum</option>
+                <option value="Solana">Solana</option>
+                <option value="Doge">Doge</option>
+              </select><br>
+              <!-- What would you like to see more of -->
+              <div class="more-of">
+                
+                <label for="More of">What would you like to see more of? (Check all that apply)</label><br>
+                <input type="checkbox" value="Risk management">
+                <label for="Risk management">Risk management</label><br>
+                <input type="checkbox" value="Investing strategies">
+                <label for="Investing strategies">Investing strategies</label><br>
+                <input type="checkbox" value="Investing strategies">
+                <label for="Candlestick patterns">Candlestick patterns</label><br>
+                <input type="checkbox" value="candlestick patterns">
+                <label for="Chart Indicators">Chart Indicators</label><br>
+                <input type="checkbox" value="Trade calls">
+                <label for="Trade calls">Trade calls</label><br>
+              </div>
+              <!-- Comments/suggestions box -->
+              <label for="Any comments or suggestions?">Any comments or suggestions?</label>
+              <textarea placeholder="Enter your comments here...."></textarea>
+              <button class="button" id="button">Submit</button>
+            </form>
+          </div>
+        </div>
+      
+      </body>
+      </html>
+      
